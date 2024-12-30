@@ -1,12 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View, StatusBar } from "react-native"; // Default imports from 'react-native'
+import { WebView } from "react-native-webview";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar barStyle="light-content" backgroundColor="#923649" />
+      <WebView source={{ uri: "https://culturebuilding.habot.io/" }} />
     </View>
   );
 }
@@ -14,8 +14,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+
+    // Set the border width on top
+    // Set the color of the border (black in this case)
   },
 });
